@@ -1,0 +1,6 @@
+BASE_URL_TRAINER = "https://api.pokemonbattle.ru/v2/trainers"
+BASE_URL_POKEMON = "https://api.pokemonbattle.ru/v2/pokemons"
+BASE_URL_BATTLE = "https://api.pokemonbattle.ru/v2/battle"
+BASE_URL_ACHIEVEMENTS = "https://api.pokemonbattle.ru/v2/achievements"
+BASE_URL_ME = "https://api.pokemonbattle.ru/v2/me"
+LAVKA_BASE_URL = "https://lavka.pokemonbattle.ru"

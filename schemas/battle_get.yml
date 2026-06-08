@@ -1,0 +1,127 @@
+type: object
+properties:
+  status:
+    type: string
+  data:
+    type: array
+    items:
+      type: object
+      properties:
+        id:
+          type: string
+        date:
+          type: string
+        winner:
+          type: string
+        loser:
+          type: string
+        loser_attack:
+          type: string
+        winner_attack:
+          type: string
+        attacking_pok_id:
+          type: string
+        trainer_winner_id:
+          type: string
+        trainer_loser_id:
+          type: string
+        winner_pokemon:
+          type: object
+          properties:
+            id:
+              type: integer
+            name:
+              type: string
+            stage:
+              type: string
+            photo_id:
+              type: integer
+            attack:
+              type: integer
+            status:
+              type: integer
+            trainer_id:
+              type: string
+            in_pokeball:
+              type: integer
+          required:
+            - id
+            - name
+            - stage
+            - photo_id
+            - attack
+            - status
+            - trainer_id
+            - in_pokeball
+          additionalProperties: false
+        loser_pokemon:
+          type: object
+          properties:
+            id:
+              type: integer
+            name:
+              type: string
+            stage:
+              type: string
+            photo_id:
+              type: integer
+            attack:
+              type: integer
+            status:
+              type: integer
+            trainer_id:
+              type: string
+            in_pokeball:
+              type: integer
+          required:
+            - id
+            - name
+            - stage
+            - photo_id
+            - attack
+            - status
+            - trainer_id
+            - in_pokeball
+          additionalProperties: false
+      required:
+        - id
+        - date
+        - winner
+        - loser
+        - loser_attack
+        - winner_attack
+        - attacking_pok_id
+        - trainer_winner_id
+        - trainer_loser_id
+        - winner_pokemon
+        - loser_pokemon
+      additionalProperties: false
+  next_page:
+    type: boolean
+  pagination:
+    type: object
+    properties:
+      page:
+        anyOf:
+          - type: integer
+          - type: "null"
+      per_page:
+        type: integer
+      total:
+        type: integer
+      total_pages:
+        type: integer
+    required:
+      - page
+      - per_page
+      - total
+      - total_pages
+    additionalProperties: false
+required:
+  - status
+  - data
+  - next_page
+  - pagination
+additionalProperties: false
+
+

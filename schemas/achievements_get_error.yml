@@ -1,0 +1,13 @@
+# схема по документации из Swagger
+
+type: object
+properties:
+  status:
+    type: string
+  message:
+    type: string
+    default: "Описание ошибки"
+required:
+  - status
+additionalProperties: false
+

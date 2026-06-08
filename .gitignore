@@ -1,0 +1,21 @@
+# Виртуальное окружение
+venv/
+
+# Файлы, созданные Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Файлы, созданные IDE
+.idea/
+.vscode/
+
+# Переменные окружения
+.env
+
+# Директории с результатами
+allure-results
+allure-report
